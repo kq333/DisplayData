@@ -62,7 +62,7 @@ export default createStore({
     async getData({ commit, state }) {
 
       const response = await fetch(
-        `http://jsonplaceholder.typicode.com/posts/?_page=${state.page}&_limit=${state.perPage}`
+        `https://jsonplaceholder.typicode.com/posts/?_page=${state.page}&_limit=${state.perPage}`
       );
 
       if (response.status >= 200 && response.status <= 299) {
